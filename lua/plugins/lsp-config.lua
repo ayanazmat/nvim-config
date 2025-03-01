@@ -27,7 +27,7 @@ return {
           "rubocop",
           "golangci-lint",
           "goimports",
-          "prettierd",
+          "prettier",
         },
       })
     end,
@@ -50,8 +50,8 @@ return {
       -- :h vim.lsp.buf
       -- useful command to see all the lsp options we have ^
       vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
-      vim.keymap.set("n", "gd", vim.lsp.buf.definition, {})
-      vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
+      vim.keymap.set("n", "<leader>la", vim.lsp.buf.code_action, {})
+      vim.keymap.set("n", "<leader>lr", vim.lsp.buf.rename, {})
     end,
   },
 }
